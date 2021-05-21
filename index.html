@@ -15,22 +15,36 @@ h6{
   font-size: 1em;
 }
 p{
-
+  font-size: 1em;
+@keyframes size {
+  0%{transform: scale(1,1);}
+  100%{transform: scale(3,3);}
+}
 }
 .circle{
   display:flex;
   position: relative;
-  right: -60vw;
+  left: calc(100vw - 25em);
   width:20em;
   height:20em;
   background-color: #0dff00;
   border-radius: 100%;
+  animation: size 3s linear  infinite alternate;
+}
+a{
+  font-size: 1em;
+  display: flex;
+  position: relative;
+  color: black;
 }
 </style>
+<script type="text/javascript">
+
+</script>
   </head>
   <body>
 <h4>TELLING STORIES #4 DIGITALIZATION</h4>
-<p>участники:
+<!-- <p>участники:
 Дарья Пономарёва - @dorothieny <br>
 Александра Зотова - @alexa.z0t0va <br>
 Анна _____ - @ <br>
@@ -40,7 +54,18 @@ p{
 
 ??? <br>
 Юрий Шехватов - @ <br>
-Алина ____ - @</p>
+Алина ____ - @</p> -->
+
+<p>участники:</p>
+<a href="https://www.instagram.com/dorothieny/?hl=ru">Дарья Пономарёва</a>
+<a href="https://www.instagram.com/alexa.z0t0va/">Александра Зотова</a>
+<a href="#">Анна</a>
+<a href="#">Светлана</a>
+<a href="https://www.instagram.com/g_achievmnt/">Полина Мазитова</a>
+<p>???</p>
+
+<a href="#">Юрий Шехватов</a>
+<a href="#">Алина</a>
 
 <div class="circle"></div>
 
