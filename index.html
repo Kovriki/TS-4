@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 body{
@@ -37,9 +39,21 @@ a{
   position: relative;
   color: black;
 }
+
+@media only screen  and (min-device-width: 375px) and (max-device-width: 720px) {
+  body{
+    font-size: 7em;
+  }
+}
 </style>
 <script type="text/javascript">
-
+$(document).ready( function(){
+  $('.circle').click(function(){
+    let w =    $(this).css("width");
+    let h =  $(this).css("height");
+    $(this).css("")
+  })
+})
 </script>
   </head>
   <body>
